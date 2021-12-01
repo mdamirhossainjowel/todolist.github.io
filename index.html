@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="sidebar" style="display:none" id="mySidebar">
+        <a href="#" onclick="today()">Today</a>
+        <a href="#" onclick="after()">Tomorrow</a>
+        <a href="#" onclick="before()">Yesterday</a>
+        <a href="#" onclick="Complete()">Complete</a>
+
+
+    </div>
+    <div class="main" id="Dummy">
+        <button id="openNav" class="btn" value="click" onclick="w3_open()">&#9776;</button>
+        <input id="task" placeholder="Enter the task"></input>
+        <input type="date" id="Date" name="DateBox">
+        <input type="time" id="Time" name="TimeBox">
+        <button class="btn1" id="btnAdd" onclick="AddTask(document.getElementById('task').value,document.getElementById('Date').value,document.getElementById('Time').value)">Add</button>
+    </div>
+    
+    <div id="Tasks">
+    <div id="Tsktdy">
+        <h3>Today's Task:</h3>
+        <p id="ptdy">Nothing For Today.</p>
+
+    </div>
+    <div id="Tsktmro">
+        <h3>Tomorrow's Task:</h3>
+        <p id="ptmro">Nothing For Tomorrow.</p>
+    </div>
+    <div id="Tskystd">
+        <h3>Previous Task:</h3>
+        <p id="pystd">Nothing For Previous.</p>
+    
+    </div>
+
+      
+    </div>
+    <div class="cmplted" id="Cmplt">
+        <h3 id="completed" >Completed Task:</h3>
+        <div id="ptsktdy">
+            <h3>Today:</h3>
+            <p id="pctdy">Empty.</p>
+    
+        </div>
+        <div id="ptsktmro">
+            <h3>Tomorrow:</h3>
+            <p id="pctmro">Empty.</p>
+        </div>  
+        <div id="ptskystd">
+            <h3>Previous:</h3>
+            <p id="pcystd">Empty.</p>
+        
+        </div>
+
+
+    </div>
+
+</body>
+</html>
