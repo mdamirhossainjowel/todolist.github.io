@@ -90,7 +90,7 @@ body {
 .main{
     margin-left: 0px; /* Same as the width of the sidenav */
     background-color: #111;
-    height: 60px;
+    height: auto;
     align-items: center;
   }  
 
